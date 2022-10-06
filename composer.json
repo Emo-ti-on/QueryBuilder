@@ -1,0 +1,21 @@
+{
+    "name": "simplify/query-builder",
+    "description": "PHP query builder",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Simplify\\QueryBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexandr Shvedov",
+            "email": "shvedov315@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-pdo": "*"
+    }
+}
