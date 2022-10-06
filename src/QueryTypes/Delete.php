@@ -12,6 +12,6 @@ class Delete extends QueryType
     public function getSql(): string
     {
         $table = $this->table;
-        return "DELETE FROM $table " . $this->getConditionsSql();
+        return "DELETE FROM `$table` " . $this->getConditionsSql();
     }
 }
