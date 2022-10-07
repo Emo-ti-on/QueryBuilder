@@ -9,7 +9,10 @@ class DeleteTest extends TestCase
 {
     public function testSimpleDelete()
     {
-        $table = "user";
+        $table = "SOME_TABLE_NAME";
+        $this->assertEquals(trim(QB::deleteFrom($table)->getSql()), "DELETE FROM `$table`");
+
+        $table = "DELETE FROM *";
         $this->assertEquals(trim(QB::deleteFrom($table)->getSql()), "DELETE FROM `$table`");
     }
 }

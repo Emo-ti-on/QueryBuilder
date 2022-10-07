@@ -23,13 +23,13 @@ trait HasWhereConditions
 
     public function andWhere(string $field, $condition, $value = null)
     {
-        $this->where[] = " AND ";
+        $this->where[] = "AND";
         return $this->where($field, $condition, $value);
     }
 
     public function orWhere(string $field, $condition, $value = null)
     {
-        $this->where[] = " AND ";
+        $this->where[] = "OR";
         return $this->where($field, $condition, $value);
     }
 
